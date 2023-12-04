@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E3D7"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:src="@drawable/art" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:rowCount="2"
+        app:columnCount="4">
+<!--        <androidx.percentlayout.widget.PercentRelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/guqin_jpg"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="14dp"-->
+<!--                android:layout_gravity="center|top"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:background="@drawable/yinyue_xianmingyueqi_guqin"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                app:layout_heightPercent="16%"-->
+<!--                app:layout_widthPercent="25%" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center|bottom"-->
+<!--                android:layout_below="@id/guqin_jpg"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:text="古琴"-->
+<!--                 />-->
+
+<!--        </androidx.percentlayout.widget.PercentRelativeLayout>-->
+        <androidx.percentlayout.widget.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/guzheng_jpg"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_heightPercent="16%"
+                app:layout_widthPercent="25%"
+                android:background="@drawable/yinyue_guzheng"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/guzheng_jpg"
+                android:layout_centerHorizontal="true"
+                android:text="古筝" />
+
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+        <androidx.percentlayout.widget.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/erhu_jpg"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_heightPercent="16%"
+                app:layout_widthPercent="25%"
+                android:background="@drawable/yinyue_erhu"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/erhu_jpg"
+                android:layout_centerHorizontal="true"
+                android:text="二胡" />
+
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+        <androidx.percentlayout.widget.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/pipa_jpg"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_heightPercent="16%"
+                app:layout_widthPercent="25%"
+                android:background="@drawable/yinyue_pipa"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pipa_jpg"
+                android:layout_centerHorizontal="true"
+                android:text="琵琶" />
+
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+<!--        <androidx.percentlayout.widget.PercentRelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/suona_jpg"-->
+<!--                android:layout_gravity="top"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                app:layout_heightPercent="16%"-->
+<!--                app:layout_widthPercent="25%"-->
+<!--                android:background="@drawable/yinyue_suona"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/suona_jpg"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:text="唢呐" />-->
+
+<!--        </androidx.percentlayout.widget.PercentRelativeLayout>-->
+        <androidx.percentlayout.widget.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/dizi_jpg"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_heightPercent="16%"
+                app:layout_widthPercent="25%"
+                android:background="@drawable/yinyue_dizi"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dizi_jpg"
+                android:layout_centerHorizontal="true"
+                android:text="笛子" />
+
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+<!--        <androidx.percentlayout.widget.PercentRelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/xun_jpg"-->
+<!--                android:layout_gravity="top"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                app:layout_heightPercent="16%"-->
+<!--                app:layout_widthPercent="25%"-->
+<!--                android:background="@drawable/yinyue_qimingyueqi_xun"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/xun_jpg"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:text="埙" />-->
+
+<!--        </androidx.percentlayout.widget.PercentRelativeLayout>-->
+        <androidx.percentlayout.widget.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/xiao_jpg"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_heightPercent="16%"
+                app:layout_widthPercent="25%"
+                android:background="@drawable/yinyue_xiao"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xiao_jpg"
+                android:layout_centerHorizontal="true"
+                android:text="箫" />
+
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+<!--        <androidx.percentlayout.widget.PercentRelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/sheng_jpg"-->
+<!--                android:layout_gravity="top"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                app:layout_heightPercent="16%"-->
+<!--                app:layout_widthPercent="25%"-->
+<!--                android:background="@drawable/yinyue_sheng"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/sheng_jpg"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:text="笙" />-->
+
+<!--        </androidx.percentlayout.widget.PercentRelativeLayout>-->
+        <androidx.percentlayout.widget.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/hulusi_jpg"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_heightPercent="16%"
+                app:layout_widthPercent="25%"
+                android:background="@drawable/yinyue_hulusi"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hulusi_jpg"
+                android:layout_centerHorizontal="true"
+                android:text="葫芦丝" />
+
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+        <androidx.percentlayout.widget.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/bianzhong_jpg"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_heightPercent="16%"
+                app:layout_widthPercent="25%"
+                android:background="@drawable/yinyue_bianzhong"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bianzhong_jpg"
+                android:layout_centerHorizontal="true"
+                android:text="编钟" />
+
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+        <androidx.percentlayout.widget.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/konghou_jpg"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_heightPercent="16%"
+                app:layout_widthPercent="25%"
+                android:background="@drawable/yinyue_konghou"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/konghou_jpg"
+                android:layout_centerHorizontal="true"
+                android:text="箜篌" />
+
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+    </androidx.gridlayout.widget.GridLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.percentlayout.widget.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablelayout_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:background="#DBC2BB"
+                app:tabGravity="fill"
+                app:tabMode="fixed"></com.google.android.material.tabs.TabLayout>
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/FragmentViewPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tablelayout_fragment">
+                </androidx.viewpager.widget.ViewPager>
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
