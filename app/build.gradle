@@ -29,8 +29,8 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
-    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'//recycleView布局
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'//百分比布局
     implementation 'androidx.appcompat:appcompat:1.0.0'
     implementation 'androidx.gridlayout:gridlayout:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'

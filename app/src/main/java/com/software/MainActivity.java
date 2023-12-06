@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.history:
                 Toast.makeText(this, "你点击了history", Toast.LENGTH_SHORT).show();
+                Intent intent =new Intent();intent.setClass(this,HistoryBrowsing.class); intent.putExtra("","0");  startActivity(intent);
                 break;
             case R.id.Settings:
                 Toast.makeText(this, "你点击了设置", Toast.LENGTH_SHORT).show();
@@ -52,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "你点击了下载", Toast.LENGTH_SHORT).show();
                 break;
             default:
-                return super.onOptionsItemSelected(item);
+                break;
+//                return super.onOptionsItemSelected(item);
         }
         return true;
     }
@@ -94,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
         SearchBox.setOnClickListener(listener);
     }
     class OnCustomListener implements View.OnClickListener{
-
         @Override
         public void onClick(View view) {
             switch (view.getId()){
