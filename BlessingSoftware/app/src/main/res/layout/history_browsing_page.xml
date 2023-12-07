@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--ws    调用Toolbar-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_historyBrowsing"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?actionBarDivider"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <ImageView
+            android:id="@+id/historyBrowsingBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:text="足迹"/>
+    </androidx.appcompat.widget.Toolbar>
+    <!--ws 用的com.google.android.material.tabs.TabLayout
+    它提供了一套与 Material Design 风格一致的样式和组件，未使用老式TableLayout
+    颜色纯白色，可更改-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/historyBrowsingTablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF" />
+    <!--ws androidx.viewpager2.widget.ViewPager2 是 Android Jetpack 的一个组件，用于在 Android 应用中实现可滑动的页面切换效果。
+    在代码中，可以使用 TabLayout 的 `setupWithViewPager()` 方法将 TabLayout 与 ViewPager2 相关联实现选项卡与页面的同步切换。这里没有使用-->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/historyBrowsingViewPage2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5DEB3"
+    tools:context=".InstrumentDetailsActivity">
+
+
+
+    <!--    乐器详情信息-->
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+
+        android:orientation="vertical">
+
+
+
+        <TextView
+
+            android:id="@+id/yueQi_detail"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+
+            android:text="阮咸(民族乐器) 阮[ruǎn]是一种中国传统乐器，阮咸的简称。相传西晋阮咸善弹此乐器，因而得名。四弦有柱，形似月琴。始于唐代，元代时在民间广泛流传，成为人们喜爱的弹拨乐器，有了广阔的音域和丰富的表现力"
+
+            android:textColor="@color/black"
+
+            android:textSize="20dp"/>
+
+
+
+
+
+        <!--    乐器相应名曲-->
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+
+
+
+            android:text="_______________________________________________________"
+
+            android:textColor="#704214"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp"
+
+
+
+            android:text="名曲"
+
+            android:textSize="25dp"
+
+            android:textStyle="bold"
+
+            android:textColor="@color/black"
+
+            android:layout_marginLeft="10dp"
+
+            android:layout_gravity="center"
+
+            android:paddingTop="7dp"/>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp">
+
+            <ImageView
+
+                android:id="@+id/yueQu_01"
+
+                android:layout_width="180dp"
+
+                android:layout_height="150dp"
+
+                android:layout_marginRight="10dp"
+
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/yinyue_xianmingyueqi_guqin" />
+
+            <ImageView
+
+                android:layout_toRightOf="@+id/yueQu_01"
+
+                android:layout_width="180dp"
+
+                android:layout_height="150dp"
+
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/yinyue_guzheng"/>
+
+        </RelativeLayout>
+
+
+
+        <!--    其他乐器推荐-->
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+
+            android:text="_______________________________________________________"
+
+            android:textColor="#704214"/>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+
+                android:layout_height="50dp"
+
+                android:text="乐器推荐"
+
+                android:textSize="25dp"
+
+                android:textStyle="bold"
+
+                android:textColor="@color/black"/>
+
+
+
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="80dp">
+
+
+                <Button
+
+                    android:id="@+id/yueQi_bt1"
+
+                    android:layout_width="95dp"
+
+                    android:layout_height="60dp"
+
+                    android:layout_marginStart="12dp"
+
+                    android:layout_marginTop="12dp"
+
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/choices"
+                    android:text="阮咸"
+                    android:textSize="16dp" />
+
+
+                <Button
+
+                    android:id="@+id/yueQi_bt2"
+
+                    android:layout_width="95dp"
+
+                    android:layout_height="60dp"
+
+                    android:layout_marginStart="12dp"
+
+                    android:layout_marginTop="12dp"
+
+                    android:layout_marginEnd="12dp"
+
+                    android:layout_marginBottom="12dp"
+                    android:layout_toRightOf="@+id/yueQi_bt1"
+                    android:background="@drawable/choices"
+                    android:text="阮咸"
+                    android:textSize="16dp" />
+
+
+
+                <Button
+
+                    android:id="@+id/yueQi_bt3"
+
+                    android:layout_width="95dp"
+
+                    android:layout_height="60dp"
+
+                    android:layout_margin="12dp"
+
+                    android:layout_toRightOf="@+id/yueQi_bt2"
+
+                    android:background="@drawable/choices"
+
+                    android:text="阮咸"
+
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="80dp">
+
+
+
+                <Button
+
+                    android:id="@+id/yueQi_bt4"
+
+                    android:layout_width="95dp"
+
+                    android:layout_height="60dp"
+
+                    android:layout_margin="12dp"
+
+                    android:background="@drawable/choices"
+
+                    android:text="阮咸"
+
+                    android:textSize="16dp" />
+
+
+
+                <Button
+
+                    android:id="@+id/yueQi_bt5"
+
+                    android:layout_width="95dp"
+
+                    android:layout_height="60dp"
+
+                    android:layout_margin="12dp"
+
+                    android:layout_toRightOf="@+id/yueQi_bt4"
+
+                    android:background="@drawable/choices"
+
+                    android:text="阮咸"
+
+                    android:textSize="16dp" />
+
+
+
+                <Button
+
+                    android:id="@+id/yueQi_bt6"
+
+                    android:layout_width="95dp"
+
+                    android:layout_height="60dp"
+
+                    android:layout_margin="12dp"
+
+                    android:layout_toRightOf="@+id/yueQi_bt5"
+
+                    android:background="@drawable/choices"
+
+                    android:text="阮咸"
+
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="80dp">
+
+                <Button
+
+                    android:id="@+id/yueQi_bt7"
+
+                    android:layout_width="95dp"
+
+                    android:layout_height="60dp"
+
+                    android:layout_margin="12dp"
+
+                    android:background="@drawable/choices"
+
+                    android:text="阮咸"
+
+                    android:textSize="16dp"/>
+
+                <Button
+
+                    android:id="@+id/yueQi_bt8"
+
+                    android:layout_width="95dp"
+
+                    android:layout_height="60dp"
+
+                    android:layout_margin="12dp"
+
+                    android:layout_toRightOf="@+id/yueQi_bt7"
+
+                    android:background="@drawable/choices"
+
+                    android:text="阮咸"
+
+                    android:textSize="16dp"/>
+
+                <Button
+
+                    android:id="@+id/yueQi_bt9"
+
+                    android:layout_width="95dp"
+
+                    android:layout_height="60dp"
+
+                    android:layout_margin="12dp"
+
+                    android:layout_toRightOf="@+id/yueQi_bt8"
+
+                    android:background="@drawable/choices"
+
+                    android:text="阮咸"
+
+                    android:textSize="16dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

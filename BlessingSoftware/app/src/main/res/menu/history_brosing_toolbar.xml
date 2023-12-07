@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- WS: menu为调用Toolbar时所创建，没有对应的原始文件-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+        android:title="User"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/garbage"
+        android:icon="@drawable/garbage"
+        android:title="History"
+        app:showAsAction="always"/>
+
+</menu>
